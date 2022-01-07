@@ -1,0 +1,15 @@
+#conna was here
+import discord as conna
+from discord.ext import commands
+from discord import client 
+
+connabot = commands.Bot(command_prefix="yo")
+@connabot.event
+async def readyconna():
+    print("conna")
+
+@connabot.command()
+async def yo(ctx):
+    await ctx.send("wassup jit")
+
+connabot.run("your token, i rather not keep regenerating tokens")
